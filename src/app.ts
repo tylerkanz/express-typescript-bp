@@ -4,7 +4,7 @@ import path from "path";
 import router from "./routes/index";
 import logger from "./utils/logger.util";
 import mongoose from "mongoose";
-import * as bodyParser from 'body-parser';
+import bodyParser from 'body-parser';
 
 // initialize configuration
 dotenv.config();
@@ -20,7 +20,7 @@ class App {
 
     public listen() {
       this.app.listen(process.env.SERVER_PORT, () => {
-        logger.info(`App listening on the port ${process.env.SERVER_PORT}`);
+        logger.info(`App listening on the port http://localhost:${process.env.SERVER_PORT}`);
       });
     }
 
